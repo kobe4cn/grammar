@@ -7,3 +7,11 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.93"
+arrow = { version = "53.2.0", features = ["prettyprint"] }
+datafusion = "43.0.0"
+parquet = { version = "53.2.0", features = ["futures"] }
+
+regex = "1.11.1"
+reqwest = "0.12.9"
+tokio = { version = "1.41.1", features = ["rt", "rt-multi-thread", "net", "macros", "io-util"] }
